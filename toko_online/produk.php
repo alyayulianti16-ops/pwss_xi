@@ -41,6 +41,18 @@
                 <td><?= $data ['deskripsi']?></td>
                 <td><?= $data ['jumlah']?></td>
                 <td><?= $data ['harga']?></td>
+                <td>
+                    <?php
+                    if(file_exists('image/'.$data['gambar'])){
+                        ?>
+                        <img src="<?= 'image/'.$data['gambar']?>" alt="" width="50" height="50">
+                        <?php
+                    }
+                    ?>
+                </td>
+                <td>
+                    <a href="delete-produk.php?id=<?= $data['id']?>" onclick="return confirm('yakin hapus data ini?')">Hapus</a>
+                </td>
             </tr>
             <?php
         }
