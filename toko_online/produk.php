@@ -2,8 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
     <title>produk</title>
+    <style>
+        table tr th {
+            background-color: blue;
+        }
+        table tr td {
+            background-color: silver;
+        }
+    </style>
 </head>
 <body>
     <form action="" method="get">
@@ -20,6 +29,8 @@
             <th>DESKRIPSI</th>
             <th>STOK</th>
             <th>HARGA</th>
+            <th>GAMBAR</th>
+            <th>AKSI</th>
         </tr>
         <?php
         include "koneksi.php";
@@ -36,7 +47,7 @@
             ?>
             <tr>
                 <td><?= $no++ ?></td>
-                <td><?= $data ['nama_produk']?></td>
+                <td><?= $data ['Nama']?></td>
                 <td><?= $data ['kategori']?></td>
                 <td><?= $data ['deskripsi']?></td>
                 <td><?= $data ['jumlah']?></td>

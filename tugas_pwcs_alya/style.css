@@ -1,0 +1,39 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+        .semua{
+            height: auto;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: palevioletred;
+            height: 60px;
+         }
+         .container .header ul li{
+            display: inline;
+            margin: 0 20px;
+         }
+         .container .header ul li a{
+            color: #ffffff;
+	        font-size: 24px;
+	        font-weight: bold;
+	        text-decoration: none;
+	        font-family: 'Poppins', sans-serif;
+	        font-size: 18px;
+	        font-weight: 550;
+         }
+         .container .header ul.mw li.myweb{
+	        font-size: 28px;
+	        font-family: 'Poppins', sans-serif;
+	        color: #ffffff;
+	        font-weight: bold;
+         }
+         .container .header a:hover{
+            color: #000000;
+         }
+         
